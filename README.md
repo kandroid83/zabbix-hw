@@ -84,7 +84,7 @@ http://127.0.0.1:8088/zabbix
 
 Скриншот раздела Configuration → Hosts (оба хоста с зелёным ZBX)
 
-![Hosts]([hosts.png](https://raw.githubusercontent.com/kandroid83/zabbix-hw/main/hosts.png))
+![Hosts](https://raw.githubusercontent.com/kandroid83/zabbix-hw/main/hosts.png)
 
 Скриншот лога Zabbix Agent на клоне
 
