@@ -82,15 +82,15 @@ http://127.0.0.1:8088/zabbix
 
 ### Результаты
 
-**Скриншот раздела Configuration → Hosts (оба хоста с зелёным ZBX)**
+Скриншот раздела Configuration → Hosts (оба хоста с зелёным ZBX)
 
 ![Hosts](hosts.png)
 
-**Скриншот лога Zabbix Agent на клоне**
+Скриншот лога Zabbix Agent на клоне
 
 ![Agent log](agent_log.png)
 
-**Скриншот раздела Monitoring → Latest data для хоста Agent 2**
+Скриншот раздела Monitoring → Latest data для хоста Agent 2
 
 ![Latest data](latest_data.png)
 
