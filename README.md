@@ -76,3 +76,36 @@ sudo systemctl enable zabbix-server zabbix-agent2 apache2
 
 Доступ к веб-интерфейсу
 http://127.0.0.1:8088/zabbix
+
+
+## Задание 2: Установка Zabbix Agent на два хоста
+
+### Результаты
+
+**Скриншот раздела Configuration → Hosts (оба хоста с зелёным ZBX)**
+
+![Hosts](screenshots/hosts.png)
+
+**Скриншот лога Zabbix Agent на клоне**
+
+![Agent log](screenshots/agent_log.png)
+
+**Скриншот раздела Monitoring → Latest data для хоста Agent 2**
+
+![Latest data](screenshots/latest_data.png)
+
+### Использованные команды
+
+#### На сервере (Zabbix Server / localhost)
+bash
+sudo apt install -y zabbix-agent2
+sudo nano /etc/zabbix/zabbix_agent2.conf   # Server=127.0.0.1, Hostname=Zabbix server
+sudo systemctl restart zabbix-agent2
+sudo systemctl enable zabbix-agent2
+
+На клоне (Agent 2)
+bash
+sudo apt install -y zabbix-agent2
+sudo nano /etc/zabbix/zabbix_agent2.conf   # Server=<IP_сервера>, Hostname=Agent 2
+sudo systemctl restart zabbix-agent2
+sudo systemctl enable zabbix-agent2
