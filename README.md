@@ -9,6 +9,18 @@
 
 ![Zabbix Dashboard](zabbix-auth.png)
 
+Скриншот раздела Configuration → Hosts (оба хоста с зелёным ZBX)
+
+![Hosts](hosts.png)
+
+Скриншот лога Zabbix Agent на клоне
+
+![Agent log](agent_log.png)
+
+Скриншот раздела Monitoring → Latest data для хоста Agent 2
+
+![Latest data](latest_data.png)
+
 ## Использованные команды
 
 ### Установка PostgreSQL
@@ -79,20 +91,6 @@ http://127.0.0.1:8088/zabbix
 
 
 ## Задание 2: Установка Zabbix Agent на два хоста
-
-### Результаты
-
-Скриншот раздела Configuration → Hosts (оба хоста с зелёным ZBX)
-
-![Hosts](https://github.com/kandroid83/zabbix-hw/blob/main/hosts.png)
-
-Скриншот лога Zabbix Agent на клоне
-
-![Agent log](agent_log.png)
-
-Скриншот раздела Monitoring → Latest data для хоста Agent 2
-
-![Latest data](latest_data.png)
 
 ### Использованные команды
 
