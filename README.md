@@ -21,6 +21,10 @@
 
 ![Latest data](latest_data.png)
 
+Скриншот страницы шаблона
+![Template items](template_items.png)
+
+
 ## Использованные команды
 
 ### Установка PostgreSQL
@@ -110,9 +114,6 @@ sudo systemctl enable zabbix-agent2
 
 
 ## Задание 1: Создание шаблона с элементами данных для CPU и RAM
-
-### Скриншот страницы шаблона
-![Template items](template_items.png)
 
 ### Использованные элементы данных
 - **CPU utilization, %** – ключ `system.cpu.util[,idle]` с предобработкой `100 - value`.
