@@ -25,6 +25,17 @@
 ![Template items](template_items.png)
 
 
+Скриншот раздела Configuration → Hosts с именами хостов и привязанными шаблонами
+![Hosts and templates](hosts_templates.png)
+
+Скриншот дашборда
+![Дашборд](screenshots/dashboard.png)
+
+
+
+
+
+
 ## Использованные команды
 
 ### Установка PostgreSQL
@@ -118,3 +129,25 @@ sudo systemctl enable zabbix-agent2
 ### Использованные элементы данных
 - **CPU utilization, %** – ключ `system.cpu.util[,idle]` с предобработкой `100 - value`.
 - **RAM utilization, %** – ключ `vm.memory.size[pused]` (или вычисляемый).
+
+## Задание 2-3: Добавление двух хостов и привязка шаблонов
+
+### Использованные команды для переименования хостов и настройки агентов
+```bash
+# На первом хосте (сервер)
+sudo nano /etc/zabbix/zabbix_agent2.conf   # Hostname=kandroid83-1
+sudo systemctl restart zabbix-agent2
+
+# На втором хосте (клон)
+sudo nano /etc/zabbix/zabbix_agent2.conf   # Hostname=kandroid83-2
+sudo systemctl restart zabbix-agent2
+
+## Задание 4: Создание кастомного дашборда
+
+### Описание
+В Zabbix создан новый дашборд с именем `My Dashboard`. На нём размещены:
+- График загрузки CPU для хоста `kandroid83-1` (виджет **Graph**).
+- График использования RAM для хоста `kandroid83-1` (виджет **Graph**).
+- Таблица последних значений CPU и RAM для обоих хостов (виджет **Item history** / **Plain text**).
+
+
