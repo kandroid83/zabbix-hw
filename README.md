@@ -21,7 +21,7 @@
 
 ![Latest data](latest_data.png)
 
-Скриншот страницы шаблона
+Скриншот страницы шаблона Items
 ![Template items](template_items.png)
 
 
