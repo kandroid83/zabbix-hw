@@ -29,7 +29,7 @@
 ![Hosts and templates](hosts_templates.png)
 
 Скриншот дашборда
-![Дашборд](screenshots/dashboard.png)
+![Дашборд](dashboard.png)
 
 
 
