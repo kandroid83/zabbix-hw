@@ -107,3 +107,13 @@ sudo apt install -y zabbix-agent2
 sudo nano /etc/zabbix/zabbix_agent2.conf   # Server=<IP_сервера>, Hostname=Agent 2
 sudo systemctl restart zabbix-agent2
 sudo systemctl enable zabbix-agent2
+
+
+## Задание 1: Создание шаблона с элементами данных для CPU и RAM
+
+### Скриншот страницы шаблона
+![Template items](template_items.png)
+
+### Использованные элементы данных
+- **CPU utilization, %** – ключ `system.cpu.util[,idle]` с предобработкой `100 - value`.
+- **RAM utilization, %** – ключ `vm.memory.size[pused]` (или вычисляемый).
